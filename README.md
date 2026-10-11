@@ -12,16 +12,27 @@ A mobile-friendly web app for logging dumbbell workouts. It runs entirely in the
 
 The library and templates are seeded from the *30-Day Intensive Forearm & Ab Routine*: Day 1 Push (repeat Day 4), Day 2 Pull (repeat Day 5), Day 3 Conditioning circuit (repeat Day 6), and Day 7 Active Recovery.
 
-## Running it
+## Using it
+
+Open the GitHub Pages link (https://eandersson-learning.github.io/workout-tracker/ once Pages is on) in any browser, on a phone or a computer. Nothing to install.
+
+- Data is saved in that browser on that device, so a phone and a laptop each keep their own history.
+- After the first visit it also works offline. On a phone you can optionally use "Add to Home Screen" to open it full-screen like an app.
+
+### Turning on GitHub Pages (one time)
+
+In the repo's **Settings → Pages**, set **Source** to **GitHub Actions**. Every push to `main` then rebuilds and publishes the site via `.github/workflows/deploy.yml`. GitHub Pages on a private repo needs a paid GitHub plan; on a free plan, make the repo public first.
+
+## Developing
 
 ```sh
 npm install
 npm run dev      # http://localhost:5173
-npm run build    # production build in dist/
+npm run build    # static site in dist/, deployable to any static host
 npm run lint
 ```
 
-To open it on your phone, run `npm run dev -- --host` and visit the network URL it prints from a phone on the same Wi‑Fi.
+Pull requests run lint and build in CI.
 
 ## Code map
 
@@ -31,3 +42,4 @@ To open it on your phone, run `npm run dev -- --host` and visit the network URL 
 - `src/workout.ts`: turning a template into a live workout.
 - `src/storage.ts`: IndexedDB persistence (localStorage fallback).
 - `src/pages/`: Templates, Session (live tracking), Exercises, History.
+- `public/sw.js`, `public/manifest.webmanifest`: offline support and home-screen install.
