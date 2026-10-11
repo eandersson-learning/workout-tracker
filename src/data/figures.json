@@ -1,0 +1,246 @@
+{
+ "standing-overhead-press": [
+  {
+   "caption": "Start",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Start\"><polyline points=\"60,40 60,72\" class=\"body\"/><polyline points=\"60,72 58,92 60,112\" class=\"body\"/><polyline points=\"60,40 68,54 68,38\" class=\"body\"/><circle cx=\"60\" cy=\"30\" r=\"7\" class=\"head\"/><rect x=\"60\" y=\"33.5\" width=\"16\" height=\"5\" rx=\"2\" class=\"bell\"/></svg>"
+  },
+  {
+   "caption": "Finish",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Finish\"><polyline points=\"60,40 60,72\" class=\"body\"/><polyline points=\"60,72 58,92 60,112\" class=\"body\"/><polyline points=\"60,40 64,26 64,10\" class=\"body\"/><circle cx=\"60\" cy=\"30\" r=\"7\" class=\"head\"/><rect x=\"56\" y=\"5.5\" width=\"16\" height=\"5\" rx=\"2\" class=\"bell\"/></svg>"
+  }
+ ],
+ "close-grip-floor-press": [
+  {
+   "caption": "Start",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Start\"><line x1=\"2\" x2=\"118\" y1=\"100\" y2=\"100\" class=\"floor\"/><polyline points=\"32,96 78,96\" class=\"body\"/><polyline points=\"78,96 96,78 106,98\" class=\"body\"/><polyline points=\"34,94 40,98 38,82\" class=\"body\"/><circle cx=\"22\" cy=\"96\" r=\"7\" class=\"head\"/><rect x=\"30\" y=\"77.5\" width=\"16\" height=\"5\" rx=\"2\" class=\"bell\"/></svg>"
+  },
+  {
+   "caption": "Finish",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Finish\"><line x1=\"2\" x2=\"118\" y1=\"100\" y2=\"100\" class=\"floor\"/><polyline points=\"32,96 78,96\" class=\"body\"/><polyline points=\"78,96 96,78 106,98\" class=\"body\"/><polyline points=\"34,94 35,76 35,58\" class=\"body\"/><circle cx=\"22\" cy=\"96\" r=\"7\" class=\"head\"/><rect x=\"27\" y=\"53.5\" width=\"16\" height=\"5\" rx=\"2\" class=\"bell\"/></svg>"
+  }
+ ],
+ "lateral-raise": [
+  {
+   "caption": "Start",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Start\"><polyline points=\"60,40 60,72\" class=\"body\"/><polyline points=\"48,42 72,42\" class=\"body\"/><polyline points=\"60,72 52,92 50,112\" class=\"body\"/><polyline points=\"60,72 68,92 70,112\" class=\"body\"/><polyline points=\"48,42 44,58 44,76\" class=\"body\"/><polyline points=\"72,42 76,58 76,76\" class=\"body\"/><circle cx=\"60\" cy=\"30\" r=\"7\" class=\"head\"/><rect x=\"41.5\" y=\"70\" width=\"5\" height=\"16\" rx=\"2\" class=\"bell\"/><rect x=\"73.5\" y=\"70\" width=\"5\" height=\"16\" rx=\"2\" class=\"bell\"/></svg>"
+  },
+  {
+   "caption": "Finish",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Finish\"><polyline points=\"60,40 60,72\" class=\"body\"/><polyline points=\"48,42 72,42\" class=\"body\"/><polyline points=\"60,72 52,92 50,112\" class=\"body\"/><polyline points=\"60,72 68,92 70,112\" class=\"body\"/><polyline points=\"48,42 32,42 16,42\" class=\"body\"/><polyline points=\"72,42 88,42 104,42\" class=\"body\"/><circle cx=\"60\" cy=\"30\" r=\"7\" class=\"head\"/><rect x=\"11.5\" y=\"34\" width=\"5\" height=\"16\" rx=\"2\" class=\"bell\"/><rect x=\"103.5\" y=\"34\" width=\"5\" height=\"16\" rx=\"2\" class=\"bell\"/></svg>"
+  }
+ ],
+ "overhead-tricep-extension": [
+  {
+   "caption": "Start",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Start\"><polyline points=\"60,40 60,72\" class=\"body\"/><polyline points=\"60,72 58,92 60,112\" class=\"body\"/><polyline points=\"60,40 62,22 50,32\" class=\"body\"/><circle cx=\"60\" cy=\"30\" r=\"7\" class=\"head\"/><rect x=\"47.5\" y=\"26\" width=\"5\" height=\"16\" rx=\"2\" class=\"bell\"/></svg>"
+  },
+  {
+   "caption": "Finish",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Finish\"><polyline points=\"60,40 60,72\" class=\"body\"/><polyline points=\"60,72 58,92 60,112\" class=\"body\"/><polyline points=\"60,40 62,22 62,8\" class=\"body\"/><circle cx=\"60\" cy=\"30\" r=\"7\" class=\"head\"/><rect x=\"59.5\" y=\"-2\" width=\"5\" height=\"16\" rx=\"2\" class=\"bell\"/></svg>"
+  }
+ ],
+ "wrist-curl": [
+  {
+   "caption": "Start (palms UP)",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Start\"><polyline points=\"40,42 40,78\" class=\"body\"/><polyline points=\"40,78 78,78\" class=\"body\"/><polyline points=\"78,78 78,112\" class=\"body\"/><polyline points=\"40,46 54,68 80,74\" class=\"body\"/><polyline points=\"80,74 88,86\" class=\"body\"/><circle cx=\"40\" cy=\"32\" r=\"7\" class=\"head\"/><rect x=\"82\" y=\"85.5\" width=\"16\" height=\"5\" rx=\"2\" class=\"bell\"/></svg>"
+  },
+  {
+   "caption": "Finish",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Finish\"><polyline points=\"40,42 40,78\" class=\"body\"/><polyline points=\"40,78 78,78\" class=\"body\"/><polyline points=\"78,78 78,112\" class=\"body\"/><polyline points=\"40,46 54,68 80,74\" class=\"body\"/><polyline points=\"80,74 88,62\" class=\"body\"/><circle cx=\"40\" cy=\"32\" r=\"7\" class=\"head\"/><rect x=\"82\" y=\"57.5\" width=\"16\" height=\"5\" rx=\"2\" class=\"bell\"/></svg>"
+  }
+ ],
+ "reverse-wrist-curl": [
+  {
+   "caption": "Start (palms DOWN)",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Start\"><polyline points=\"40,42 40,78\" class=\"body\"/><polyline points=\"40,78 78,78\" class=\"body\"/><polyline points=\"78,78 78,112\" class=\"body\"/><polyline points=\"40,46 54,68 80,74\" class=\"body\"/><polyline points=\"80,74 88,86\" class=\"body\"/><circle cx=\"40\" cy=\"32\" r=\"7\" class=\"head\"/><rect x=\"82\" y=\"85.5\" width=\"16\" height=\"5\" rx=\"2\" class=\"bell\"/></svg>"
+  },
+  {
+   "caption": "Finish",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Finish\"><polyline points=\"40,42 40,78\" class=\"body\"/><polyline points=\"40,78 78,78\" class=\"body\"/><polyline points=\"78,78 78,112\" class=\"body\"/><polyline points=\"40,46 54,68 80,74\" class=\"body\"/><polyline points=\"80,74 88,62\" class=\"body\"/><circle cx=\"40\" cy=\"32\" r=\"7\" class=\"head\"/><rect x=\"82\" y=\"57.5\" width=\"16\" height=\"5\" rx=\"2\" class=\"bell\"/></svg>"
+  }
+ ],
+ "reverse-curl": [
+  {
+   "caption": "Start (overhand grip, palms down)",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Start\"><polyline points=\"60,40 60,72\" class=\"body\"/><polyline points=\"60,72 58,92 60,112\" class=\"body\"/><polyline points=\"60,40 60,58 60,76\" class=\"body\"/><circle cx=\"60\" cy=\"30\" r=\"7\" class=\"head\"/><rect x=\"52\" y=\"75.5\" width=\"16\" height=\"5\" rx=\"2\" class=\"bell\"/></svg>"
+  },
+  {
+   "caption": "Finish (curl up, wrists straight)",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Finish\"><polyline points=\"60,40 60,72\" class=\"body\"/><polyline points=\"60,72 58,92 60,112\" class=\"body\"/><polyline points=\"60,40 60,58 72,46\" class=\"body\"/><circle cx=\"60\" cy=\"30\" r=\"7\" class=\"head\"/><rect x=\"66\" y=\"41.5\" width=\"16\" height=\"5\" rx=\"2\" class=\"bell\"/></svg>"
+  }
+ ],
+ "weighted-sit-up": [
+  {
+   "caption": "Start",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Start\"><line x1=\"2\" x2=\"118\" y1=\"100\" y2=\"100\" class=\"floor\"/><polyline points=\"32,96 78,96\" class=\"body\"/><polyline points=\"78,96 96,78 106,98\" class=\"body\"/><polyline points=\"34,96 44,90\" class=\"body\"/><circle cx=\"22\" cy=\"96\" r=\"7\" class=\"head\"/><rect x=\"38\" y=\"85.5\" width=\"16\" height=\"5\" rx=\"2\" class=\"bell\"/></svg>"
+  },
+  {
+   "caption": "Finish",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Finish\"><line x1=\"2\" x2=\"118\" y1=\"100\" y2=\"100\" class=\"floor\"/><polyline points=\"78,96 74,58\" class=\"body\"/><polyline points=\"78,96 96,78 106,98\" class=\"body\"/><polyline points=\"74,58 86,66\" class=\"body\"/><circle cx=\"74\" cy=\"47\" r=\"7\" class=\"head\"/><rect x=\"80\" y=\"63.5\" width=\"16\" height=\"5\" rx=\"2\" class=\"bell\"/></svg>"
+  }
+ ],
+ "hanging-lying-leg-raise": [
+  {
+   "caption": "Start",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Start\"><line x1=\"2\" x2=\"118\" y1=\"100\" y2=\"100\" class=\"floor\"/><polyline points=\"32,96 76,96\" class=\"body\"/><polyline points=\"34,96 52,98\" class=\"body\"/><polyline points=\"76,96 112,96\" class=\"body\"/><circle cx=\"22\" cy=\"96\" r=\"7\" class=\"head\"/></svg>"
+  },
+  {
+   "caption": "Finish",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Finish\"><line x1=\"2\" x2=\"118\" y1=\"100\" y2=\"100\" class=\"floor\"/><polyline points=\"32,96 76,96\" class=\"body\"/><polyline points=\"34,96 52,98\" class=\"body\"/><polyline points=\"76,96 76,56\" class=\"body\"/><circle cx=\"22\" cy=\"96\" r=\"7\" class=\"head\"/></svg>"
+  }
+ ],
+ "plank": [
+  {
+   "caption": "Position (hold, body in a straight line)",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Position\"><line x1=\"2\" x2=\"118\" y1=\"109\" y2=\"109\" class=\"floor\"/><polyline points=\"34,88 76,98 112,106\" class=\"body\"/><polyline points=\"34,88 36,106 54,106\" class=\"body\"/><circle cx=\"24\" cy=\"80\" r=\"7\" class=\"head\"/></svg>"
+  }
+ ],
+ "bent-over-row": [
+  {
+   "caption": "Start",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Start\"><polyline points=\"46,72 82,50\" class=\"body\"/><polyline points=\"46,72 50,94 50,114\" class=\"body\"/><polyline points=\"82,50 82,68 82,86\" class=\"body\"/><circle cx=\"92\" cy=\"44\" r=\"7\" class=\"head\"/><rect x=\"74\" y=\"85.5\" width=\"16\" height=\"5\" rx=\"2\" class=\"bell\"/></svg>"
+  },
+  {
+   "caption": "Finish",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Finish\"><polyline points=\"46,72 82,50\" class=\"body\"/><polyline points=\"46,72 50,94 50,114\" class=\"body\"/><polyline points=\"82,50 64,66 80,70\" class=\"body\"/><circle cx=\"92\" cy=\"44\" r=\"7\" class=\"head\"/><rect x=\"74\" y=\"69.5\" width=\"16\" height=\"5\" rx=\"2\" class=\"bell\"/></svg>"
+  }
+ ],
+ "hammer-curl": [
+  {
+   "caption": "Start",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Start\"><polyline points=\"60,40 60,72\" class=\"body\"/><polyline points=\"60,72 58,92 60,112\" class=\"body\"/><polyline points=\"60,40 60,58 60,76\" class=\"body\"/><circle cx=\"60\" cy=\"30\" r=\"7\" class=\"head\"/><rect x=\"57.5\" y=\"70\" width=\"5\" height=\"16\" rx=\"2\" class=\"bell\"/></svg>"
+  },
+  {
+   "caption": "Finish",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Finish\"><polyline points=\"60,40 60,72\" class=\"body\"/><polyline points=\"60,72 58,92 60,112\" class=\"body\"/><polyline points=\"60,40 60,58 72,46\" class=\"body\"/><circle cx=\"60\" cy=\"30\" r=\"7\" class=\"head\"/><rect x=\"71.5\" y=\"36\" width=\"5\" height=\"16\" rx=\"2\" class=\"bell\"/></svg>"
+  }
+ ],
+ "rear-delt-fly": [
+  {
+   "caption": "Start (torso hinged forward)",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Start\"><polyline points=\"60,56 60,80\" class=\"body\"/><polyline points=\"46,58 74,58\" class=\"body\"/><polyline points=\"60,80 54,96 52,114\" class=\"body\"/><polyline points=\"60,80 66,96 68,114\" class=\"body\"/><polyline points=\"46,58 44,74 44,90\" class=\"body\"/><polyline points=\"74,58 76,74 76,90\" class=\"body\"/><circle cx=\"60\" cy=\"47\" r=\"7\" class=\"head\"/><rect x=\"41.5\" y=\"84\" width=\"5\" height=\"16\" rx=\"2\" class=\"bell\"/><rect x=\"73.5\" y=\"84\" width=\"5\" height=\"16\" rx=\"2\" class=\"bell\"/></svg>"
+  },
+  {
+   "caption": "Finish (arms sweep out)",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Finish\"><polyline points=\"60,56 60,80\" class=\"body\"/><polyline points=\"46,58 74,58\" class=\"body\"/><polyline points=\"60,80 54,96 52,114\" class=\"body\"/><polyline points=\"60,80 66,96 68,114\" class=\"body\"/><polyline points=\"46,58 30,56 14,56\" class=\"body\"/><polyline points=\"74,58 90,56 106,56\" class=\"body\"/><circle cx=\"60\" cy=\"47\" r=\"7\" class=\"head\"/><rect x=\"9.5\" y=\"48\" width=\"5\" height=\"16\" rx=\"2\" class=\"bell\"/><rect x=\"105.5\" y=\"48\" width=\"5\" height=\"16\" rx=\"2\" class=\"bell\"/></svg>"
+  }
+ ],
+ "thick-grip-farmer-s-carry": [
+  {
+   "caption": "Start (towel-wrapped handles)",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Start\"><polyline points=\"60,40 60,72\" class=\"body\"/><polyline points=\"60,72 58,92 60,112\" class=\"body\"/><polyline points=\"60,40 60,58 60,76\" class=\"body\"/><circle cx=\"60\" cy=\"30\" r=\"7\" class=\"head\"/><rect x=\"55.5\" y=\"72\" width=\"9\" height=\"16\" rx=\"2\" class=\"bell\"/></svg>"
+  },
+  {
+   "caption": "Finish",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Finish\"><polyline points=\"60,40 60,72\" class=\"body\"/><polyline points=\"60,72 48,92 44,112\" class=\"body\"/><polyline points=\"60,72 72,92 76,112\" class=\"body\"/><polyline points=\"60,40 60,58 60,76\" class=\"body\"/><circle cx=\"60\" cy=\"30\" r=\"7\" class=\"head\"/><rect x=\"55.5\" y=\"72\" width=\"9\" height=\"16\" rx=\"2\" class=\"bell\"/></svg>"
+  }
+ ],
+ "single-arm-suitcase-carry": [
+  {
+   "caption": "Start (one arm only, stay upright)",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Start\"><polyline points=\"60,40 60,72\" class=\"body\"/><polyline points=\"60,72 58,92 60,112\" class=\"body\"/><polyline points=\"60,40 60,58 60,76\" class=\"body\"/><polyline points=\"60,40 70,54 63,64\" class=\"body\"/><circle cx=\"60\" cy=\"30\" r=\"7\" class=\"head\"/><rect x=\"57.5\" y=\"72\" width=\"5\" height=\"16\" rx=\"2\" class=\"bell\"/></svg>"
+  },
+  {
+   "caption": "Finish",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Finish\"><polyline points=\"60,40 60,72\" class=\"body\"/><polyline points=\"60,72 48,92 44,112\" class=\"body\"/><polyline points=\"60,72 72,92 76,112\" class=\"body\"/><polyline points=\"60,40 60,58 60,76\" class=\"body\"/><polyline points=\"60,40 70,54 63,64\" class=\"body\"/><circle cx=\"60\" cy=\"30\" r=\"7\" class=\"head\"/><rect x=\"57.5\" y=\"72\" width=\"5\" height=\"16\" rx=\"2\" class=\"bell\"/></svg>"
+  }
+ ],
+ "zottman-curl": [
+  {
+   "caption": "Start (palms up)",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Start\"><polyline points=\"60,40 60,72\" class=\"body\"/><polyline points=\"60,72 58,92 60,112\" class=\"body\"/><polyline points=\"60,40 60,58 60,76\" class=\"body\"/><circle cx=\"60\" cy=\"30\" r=\"7\" class=\"head\"/><rect x=\"52\" y=\"75.5\" width=\"16\" height=\"5\" rx=\"2\" class=\"bell\"/></svg>"
+  },
+  {
+   "caption": "Finish (rotate palms down)",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Finish\"><polyline points=\"60,40 60,72\" class=\"body\"/><polyline points=\"60,72 58,92 60,112\" class=\"body\"/><polyline points=\"60,40 60,58 72,46\" class=\"body\"/><circle cx=\"60\" cy=\"30\" r=\"7\" class=\"head\"/><rect x=\"66\" y=\"41.5\" width=\"16\" height=\"5\" rx=\"2\" class=\"bell\"/></svg>"
+  }
+ ],
+ "radial-deviation": [
+  {
+   "caption": "Start (hold bell by one end)",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Start\"><polyline points=\"60,40 60,72\" class=\"body\"/><polyline points=\"60,72 58,92 60,112\" class=\"body\"/><polyline points=\"60,40 60,58 60,76\" class=\"body\"/><circle cx=\"60\" cy=\"30\" r=\"7\" class=\"head\"/><rect x=\"57.5\" y=\"80\" width=\"5\" height=\"16\" rx=\"2\" class=\"bell\"/></svg>"
+  },
+  {
+   "caption": "Finish (tilt wrist up, then lower)",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Finish\"><polyline points=\"60,40 60,72\" class=\"body\"/><polyline points=\"60,72 58,92 60,112\" class=\"body\"/><polyline points=\"60,40 60,58 60,76\" class=\"body\"/><circle cx=\"60\" cy=\"30\" r=\"7\" class=\"head\"/><rect x=\"64\" y=\"77.5\" width=\"16\" height=\"5\" rx=\"2\" class=\"bell\"/></svg>"
+  }
+ ],
+ "russian-twist": [
+  {
+   "caption": "Start (rotate side to side)",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Start\"><line x1=\"2\" x2=\"118\" y1=\"104\" y2=\"104\" class=\"floor\"/><polyline points=\"50,102 38,66\" class=\"body\"/><polyline points=\"50,102 78,86 94,102\" class=\"body\"/><polyline points=\"38,66 62,76\" class=\"body\"/><circle cx=\"32\" cy=\"56\" r=\"7\" class=\"head\"/><rect x=\"56\" y=\"73.5\" width=\"16\" height=\"5\" rx=\"2\" class=\"bell\"/></svg>"
+  },
+  {
+   "caption": "Finish",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Finish\"><line x1=\"2\" x2=\"118\" y1=\"104\" y2=\"104\" class=\"floor\"/><polyline points=\"50,102 38,66\" class=\"body\"/><polyline points=\"50,102 78,86 94,102\" class=\"body\"/><polyline points=\"38,66 30,80\" class=\"body\"/><circle cx=\"32\" cy=\"56\" r=\"7\" class=\"head\"/><rect x=\"20\" y=\"79.5\" width=\"16\" height=\"5\" rx=\"2\" class=\"bell\"/></svg>"
+  }
+ ],
+ "bicycle-crunch": [
+  {
+   "caption": "Position (elbow to opposite knee, alternate)",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Position\"><line x1=\"2\" x2=\"118\" y1=\"100\" y2=\"100\" class=\"floor\"/><polyline points=\"70,96 46,80\" class=\"body\"/><polyline points=\"70,96 86,80 96,92\" class=\"body\"/><polyline points=\"70,96 112,92\" class=\"body\"/><polyline points=\"46,80 38,66 46,66\" class=\"body\"/><circle cx=\"38\" cy=\"74\" r=\"7\" class=\"head\"/></svg>"
+  }
+ ],
+ "curl-to-press": [
+  {
+   "caption": "Start",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Start\"><polyline points=\"60,40 60,72\" class=\"body\"/><polyline points=\"60,72 58,92 60,112\" class=\"body\"/><polyline points=\"60,40 60,58 60,76\" class=\"body\"/><circle cx=\"60\" cy=\"30\" r=\"7\" class=\"head\"/><rect x=\"52\" y=\"75.5\" width=\"16\" height=\"5\" rx=\"2\" class=\"bell\"/></svg>"
+  },
+  {
+   "caption": "Finish",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Finish\"><polyline points=\"60,40 60,72\" class=\"body\"/><polyline points=\"60,72 58,92 60,112\" class=\"body\"/><polyline points=\"60,40 64,26 64,10\" class=\"body\"/><circle cx=\"60\" cy=\"30\" r=\"7\" class=\"head\"/><rect x=\"56\" y=\"5.5\" width=\"16\" height=\"5\" rx=\"2\" class=\"bell\"/></svg>"
+  }
+ ],
+ "renegade-row": [
+  {
+   "caption": "Start",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Start\"><line x1=\"2\" x2=\"118\" y1=\"109\" y2=\"109\" class=\"floor\"/><polyline points=\"36,78 76,92 112,104\" class=\"body\"/><polyline points=\"36,78 36,104\" class=\"body\"/><polyline points=\"36,78 46,92 46,104\" class=\"body\"/><circle cx=\"26\" cy=\"70\" r=\"7\" class=\"head\"/><rect x=\"28\" y=\"103.5\" width=\"16\" height=\"5\" rx=\"2\" class=\"bell\"/><rect x=\"38\" y=\"103.5\" width=\"16\" height=\"5\" rx=\"2\" class=\"bell\"/></svg>"
+  },
+  {
+   "caption": "Finish",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Finish\"><line x1=\"2\" x2=\"118\" y1=\"109\" y2=\"109\" class=\"floor\"/><polyline points=\"36,78 76,92 112,104\" class=\"body\"/><polyline points=\"36,78 36,104\" class=\"body\"/><polyline points=\"36,78 54,76 48,88\" class=\"body\"/><circle cx=\"26\" cy=\"70\" r=\"7\" class=\"head\"/><rect x=\"28\" y=\"103.5\" width=\"16\" height=\"5\" rx=\"2\" class=\"bell\"/><rect x=\"40\" y=\"87.5\" width=\"16\" height=\"5\" rx=\"2\" class=\"bell\"/></svg>"
+  }
+ ],
+ "pronation-supination-rotation": [
+  {
+   "caption": "Start (palm up)",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Start\"><polyline points=\"40,42 40,78\" class=\"body\"/><polyline points=\"40,78 78,78\" class=\"body\"/><polyline points=\"78,78 78,112\" class=\"body\"/><polyline points=\"40,46 54,68 80,74\" class=\"body\"/><polyline points=\"80,74 88,74\" class=\"body\"/><circle cx=\"40\" cy=\"32\" r=\"7\" class=\"head\"/><rect x=\"84\" y=\"71.5\" width=\"16\" height=\"5\" rx=\"2\" class=\"bell\"/></svg>"
+  },
+  {
+   "caption": "Finish (rotate to palm down)",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Finish\"><polyline points=\"40,42 40,78\" class=\"body\"/><polyline points=\"40,78 78,78\" class=\"body\"/><polyline points=\"78,78 78,112\" class=\"body\"/><polyline points=\"40,46 54,68 80,74\" class=\"body\"/><polyline points=\"80,74 88,74\" class=\"body\"/><circle cx=\"40\" cy=\"32\" r=\"7\" class=\"head\"/><rect x=\"89.5\" y=\"66\" width=\"5\" height=\"16\" rx=\"2\" class=\"bell\"/></svg>"
+  }
+ ],
+ "mountain-climbers": [
+  {
+   "caption": "Position (drive knees in alternately)",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Position\"><line x1=\"2\" x2=\"118\" y1=\"109\" y2=\"109\" class=\"floor\"/><polyline points=\"36,78 76,92 112,104\" class=\"body\"/><polyline points=\"36,78 36,106\" class=\"body\"/><polyline points=\"76,92 56,92 62,106\" class=\"body\"/><circle cx=\"26\" cy=\"70\" r=\"7\" class=\"head\"/></svg>"
+  }
+ ],
+ "v-up": [
+  {
+   "caption": "Start",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Start\"><line x1=\"2\" x2=\"118\" y1=\"100\" y2=\"100\" class=\"floor\"/><polyline points=\"34,96 78,96\" class=\"body\"/><polyline points=\"78,96 114,96\" class=\"body\"/><polyline points=\"34,96 12,96\" class=\"body\"/><circle cx=\"24\" cy=\"96\" r=\"7\" class=\"head\"/></svg>"
+  },
+  {
+   "caption": "Finish",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Finish\"><line x1=\"2\" x2=\"118\" y1=\"100\" y2=\"100\" class=\"floor\"/><polyline points=\"66,96 44,56\" class=\"body\"/><polyline points=\"66,96 98,58\" class=\"body\"/><polyline points=\"44,58 86,60\" class=\"body\"/><circle cx=\"38\" cy=\"47\" r=\"7\" class=\"head\"/></svg>"
+  }
+ ],
+ "side-plank-with-hip-dip": [
+  {
+   "caption": "Start",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Start\"><line x1=\"2\" x2=\"118\" y1=\"109\" y2=\"109\" class=\"floor\"/><polyline points=\"34,72 74,86 114,100\" class=\"body\"/><polyline points=\"34,72 34,106 52,106\" class=\"body\"/><circle cx=\"26\" cy=\"66\" r=\"7\" class=\"head\"/></svg>"
+  },
+  {
+   "caption": "Finish",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Finish\"><line x1=\"2\" x2=\"118\" y1=\"109\" y2=\"109\" class=\"floor\"/><polyline points=\"34,72 74,98 114,102\" class=\"body\"/><polyline points=\"34,72 34,106 52,106\" class=\"body\"/><circle cx=\"26\" cy=\"66\" r=\"7\" class=\"head\"/></svg>"
+  }
+ ],
+ "bell-head-hold": [
+  {
+   "caption": "Position (pinch the bell head with your fingers)",
+   "svg": "<svg viewBox=\"0 0 120 124\" role=\"img\" aria-label=\"Position\"><polyline points=\"60,40 60,72\" class=\"body\"/><polyline points=\"60,72 58,92 60,112\" class=\"body\"/><polyline points=\"60,40 60,58 60,76\" class=\"body\"/><circle cx=\"60\" cy=\"30\" r=\"7\" class=\"head\"/><rect x=\"57.5\" y=\"82\" width=\"5\" height=\"16\" rx=\"2\" class=\"bell\"/></svg>"
+  }
+ ]
+}
