@@ -7,6 +7,8 @@ A mobile-friendly web app for logging dumbbell workouts. It runs entirely in the
 - **Exercise library** with a start/finish illustration (or your own image/GIF, by URL or upload) and a one-line form cue for each exercise.
 - **Templates**: ordered exercises grouped into blocks, with target sets, rep ranges, timed holds, holds to failure, and per-side counts. A block with more than one round runs as a circuit.
 - **Live tracking**: start a template (or an empty workout), pick the weight, tick off sets, and use the built-in stopwatch for timed holds and carries. Weights carry forward to later sets and are prefilled from your last session.
+- **Rest timer**: ticking off a set starts a timer that counts up in seconds, so you can see how long you've rested.
+- **Difficulty rating**: rate each done set Easy, Medium or Hard. Next time you start the same template, that set's weight starts one notch (3 lb) up for Easy, the same for Medium, or one notch down for Hard. Unrated sets count as Medium.
 - **PowerBlock Sport weights only**: the weight picker offers 3–24 lb in 3 lb steps.
 - **History** of finished workouts, plus recent sets on each exercise.
 

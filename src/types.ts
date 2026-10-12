@@ -49,6 +49,8 @@ export type Template = {
   builtIn?: boolean
 }
 
+export type Difficulty = 'easy' | 'medium' | 'hard'
+
 export type SetLog = {
   round: number
   reps?: number
@@ -56,6 +58,8 @@ export type SetLog = {
   /** Pounds; undefined means bodyweight / no dumbbell. */
   weight?: number
   done: boolean
+  /** How the set felt; sets the starting weight next time (unrated counts as medium). */
+  rating?: Difficulty
 }
 
 export type WorkoutEntry = {
@@ -79,6 +83,8 @@ export type Workout = {
   notes?: string
   blocks: WorkoutBlock[]
   entries: WorkoutEntry[]
+  /** When the last set was ticked off; drives the rest timer. */
+  restStartedAt?: number
 }
 
 export type AppState = {
