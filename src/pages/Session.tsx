@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { Fragment, useState } from 'react'
 import { ExerciseImage } from '../components/ExerciseImage'
 import { ExercisePicker } from '../components/ExercisePicker'
 import { Modal } from '../components/Modal'
@@ -7,7 +7,7 @@ import { WeightSelect } from '../components/WeightSelect'
 import { formatDuration, formatTarget } from '../format'
 import { useStore } from '../storeContext'
 import { useNow } from '../useNow'
-import type { Exercise, SetLog, Workout, WorkoutEntry } from '../types'
+import type { Difficulty, Exercise, SetLog, Workout, WorkoutEntry } from '../types'
 import { completedSets, defaultValue, entryForExercise, totalSets } from '../workout'
 
 export function Session({ workout }: { workout: Workout }) {
@@ -23,11 +23,13 @@ export function Session({ workout }: { workout: Workout }) {
   const saveEntry = (entryId: string, fn: (e: WorkoutEntry) => WorkoutEntry) =>
     save((w) => ({ ...w, entries: w.entries.map((e) => (e.id === entryId ? fn(e) : e)) }))
 
+  const startRest = () => save((w) => ({ ...w, restStartedAt: Date.now() }))
+
   const finish = () =>
     update((s) => ({
       ...s,
       activeWorkoutId: undefined,
-      workouts: s.workouts.map((w) => (w.id === workout.id ? { ...w, finishedAt: Date.now() } : w)),
+      workouts: s.workouts.map((w) => (w.id === workout.id ? { ...w, finishedAt: Date.now(), restStartedAt: undefined } : w)),
     }))
 
   const discard = () =>
@@ -82,6 +84,7 @@ export function Session({ workout }: { workout: Workout }) {
                         round={r + 1}
                         onInfo={setInfo}
                         onChange={(fn) => saveEntry(entry.id, fn)}
+                        onSetDone={startRest}
                       />
                     ))}
                   </div>
@@ -93,6 +96,7 @@ export function Session({ workout }: { workout: Workout }) {
                     exercise={exercise(entry.exerciseId)}
                     onInfo={setInfo}
                     onChange={(fn) => saveEntry(entry.id, fn)}
+                    onSetDone={startRest}
                     onRemove={() => save((w) => ({ ...w, entries: w.entries.filter((e) => e.id !== entry.id) }))}
                   />
                 ))}
@@ -108,6 +112,14 @@ export function Session({ workout }: { workout: Workout }) {
           Discard workout
         </button>
       </div>
+
+      {workout.restStartedAt && (
+        <RestTimer
+          key={workout.restStartedAt}
+          since={workout.restStartedAt}
+          onDismiss={() => save((w) => ({ ...w, restStartedAt: undefined }))}
+        />
+      )}
 
       {picking && <ExercisePicker onPick={addExercise} onClose={() => setPicking(false)} />}
       {info && (
@@ -145,10 +157,33 @@ type EntryProps = {
   round?: number
   onInfo: (ex: Exercise) => void
   onChange: (fn: (e: WorkoutEntry) => WorkoutEntry) => void
+  /** A set was just ticked off, so the rest timer restarts. */
+  onSetDone: () => void
   onRemove?: () => void
 }
 
-function EntryCard({ entry, exercise, round, onInfo, onChange, onRemove }: EntryProps) {
+const RATINGS: { value: Difficulty; label: string }[] = [
+  { value: 'easy', label: 'Easy' },
+  { value: 'medium', label: 'Medium' },
+  { value: 'hard', label: 'Hard' },
+]
+
+/** Counts up from the last ticked-off set so rest between sets is visible. */
+function RestTimer({ since, onDismiss }: { since: number; onDismiss: () => void }) {
+  const now = useNow(250)
+  const seconds = Math.max(0, Math.floor((now - since) / 1000))
+  return (
+    <div className="rest-bar" role="timer" aria-live="off">
+      <span>Rest</span>
+      <strong>{seconds}s</strong>
+      <button className="icon-btn" onClick={onDismiss} aria-label="Hide rest timer">
+        ✕
+      </button>
+    </div>
+  )
+}
+
+function EntryCard({ entry, exercise, round, onInfo, onChange, onSetDone, onRemove }: EntryProps) {
   if (!exercise) return null
   const timed = entry.target ? entry.target.kind !== 'reps' : exercise.measure === 'time'
   const indexes = entry.sets.map((s, i) => [s, i] as const).filter(([s]) => round === undefined || s.round === round)
@@ -169,7 +204,10 @@ function EntryCard({ entry, exercise, round, onInfo, onChange, onRemove }: Entry
     if (s.done) return setAt(i, { done: false })
     const fill = defaultValue(entry.target)
     setAt(i, timed ? { done: true, seconds: s.seconds ?? fill } : { done: true, reps: s.reps ?? fill })
+    onSetDone()
   }
+
+  const columns = exercise.weighted ? 4 : 3
 
   const addSet = () =>
     onChange((e) => {
@@ -208,43 +246,67 @@ function EntryCard({ entry, exercise, round, onInfo, onChange, onRemove }: Entry
         </thead>
         <tbody>
           {indexes.map(([s, i]) => (
-            <tr key={i} className={s.done ? 'done' : ''}>
-              <td className="set-n">{round === undefined ? i + 1 : ''}</td>
-              {exercise.weighted && (
+            <Fragment key={i}>
+              <tr className={s.done ? 'done' : ''}>
+                <td className="set-n">{round === undefined ? i + 1 : ''}</td>
+                {exercise.weighted && (
+                  <td>
+                    <WeightSelect value={s.weight} onChange={(weight) => setWeight(i, weight)} />
+                  </td>
+                )}
                 <td>
-                  <WeightSelect value={s.weight} onChange={(weight) => setWeight(i, weight)} />
+                  <div className="val-cell">
+                    <input
+                      type="number"
+                      inputMode="numeric"
+                      min={0}
+                      aria-label={timed ? 'Seconds' : 'Reps'}
+                      placeholder={String(defaultValue(entry.target) ?? (timed ? 'sec' : 'reps'))}
+                      value={(timed ? s.seconds : s.reps) ?? ''}
+                      onChange={(e) => {
+                        const v = e.target.value === '' ? undefined : Math.max(0, Number(e.target.value))
+                        setAt(i, timed ? { seconds: v } : { reps: v })
+                      }}
+                    />
+                    {timed && !s.done && (
+                      <Timer target={defaultValue(entry.target)} onStop={(seconds) => {
+                          setAt(i, { seconds, done: true })
+                          onSetDone()
+                        }}
+                      />
+                    )}
+                  </div>
                 </td>
+                <td>
+                  <button
+                    className={`check${s.done ? ' on' : ''}`}
+                    onClick={() => toggle(i)}
+                    aria-label={s.done ? 'Mark set not done' : 'Mark set done'}
+                    aria-pressed={s.done}
+                  >
+                    ✓
+                  </button>
+                </td>
+              </tr>
+              {s.done && (
+                <tr className="rating-row">
+                  <td colSpan={columns}>
+                    <div className="rating" role="group" aria-label={`How did set ${i + 1} feel?`}>
+                      {RATINGS.map((r) => (
+                        <button
+                          key={r.value}
+                          className={`rating-btn ${r.value}${(s.rating ?? 'medium') === r.value ? ' on' : ''}`}
+                          onClick={() => setAt(i, { rating: r.value })}
+                          aria-pressed={(s.rating ?? 'medium') === r.value}
+                        >
+                          {r.label}
+                        </button>
+                      ))}
+                    </div>
+                  </td>
+                </tr>
               )}
-              <td>
-                <div className="val-cell">
-                  <input
-                    type="number"
-                    inputMode="numeric"
-                    min={0}
-                    aria-label={timed ? 'Seconds' : 'Reps'}
-                    placeholder={String(defaultValue(entry.target) ?? (timed ? 'sec' : 'reps'))}
-                    value={(timed ? s.seconds : s.reps) ?? ''}
-                    onChange={(e) => {
-                      const v = e.target.value === '' ? undefined : Math.max(0, Number(e.target.value))
-                      setAt(i, timed ? { seconds: v } : { reps: v })
-                    }}
-                  />
-                  {timed && !s.done && (
-                    <Timer target={defaultValue(entry.target)} onStop={(seconds) => setAt(i, { seconds, done: true })} />
-                  )}
-                </div>
-              </td>
-              <td>
-                <button
-                  className={`check${s.done ? ' on' : ''}`}
-                  onClick={() => toggle(i)}
-                  aria-label={s.done ? 'Mark set not done' : 'Mark set done'}
-                  aria-pressed={s.done}
-                >
-                  ✓
-                </button>
-              </td>
-            </tr>
+            </Fragment>
           ))}
         </tbody>
       </table>
